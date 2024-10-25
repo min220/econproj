@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+@import 'flowbite';
+
+/* app.css */
+
+.container {
+  display: flex; /* Use flexbox to position the sidebar and bar */
+  position: relative; /* Allow absolutely positioned elements to be relative to this container */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.vertical-bar {
+  width: 20%; /* Set the width of the bar */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f9fafb;
+  position: absolute; /* Position behind the sidebar */
+  z-index: 1; /* Ensure it is behind the sidebar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+  position: relative; /* Ensure the sidebar is on top of the bar */
+  z-index: 2; /* Bring the sidebar in front */
 }

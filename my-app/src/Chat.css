@@ -1,0 +1,75 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* Full height */
+    max-width: 1300px; /* Increased width */
+    margin: auto;
+    overflow: hidden;
+    padding-left: 20%; /* Keep padding to shift the main container right */
+  }
+  
+  .chat-window {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: transparent;
+    margin-right: 0; /* Ensure no margin on the right */
+  }
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 7px;
+    max-width: 80%;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .bot {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: black;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 10px;
+    background-color: transparent;
+    margin-left: 20px; /* Maintain margin to shift input field */
+  }
+  
+  .input-container .input-field {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Curved corners */
+    outline: none; /* Remove outline on focus (optional) */
+  }
+  
+  button.send-button {
+      -webkit-appearance: none; /* Reset the button appearance */
+      background-color: #007bff; /* Your desired background color */
+      color: white; /* Text color */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      margin-left: 10px; /* Spacing */
+      padding: 10px; /* Padding */
+      display: inline-block; /* Allow inline-block behavior */
+      width: 100px; /* Explicit width */
+      height: 40px; /* Explicit height */
+  }
+  
+  button.send-button:hover {
+      background-color: #0056b3; /* Darker background on hover */
+  }
